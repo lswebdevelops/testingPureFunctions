@@ -11,5 +11,4 @@ function divide(a,b){
         sum,
         multiply,
         divide,
-        
-}
+      }

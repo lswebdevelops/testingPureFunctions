@@ -13,4 +13,6 @@ function calculateTax(productPrice) {
 }
 
 console.log(calculateTax(200));
+console.log("hi");
+
 

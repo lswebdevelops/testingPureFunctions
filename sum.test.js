@@ -11,6 +11,6 @@ test('multiply 1 * 2 to equal 3', () => {
   test('divide 1 / 2 to equal 0.5', () =>{
 //    expect(divide(1, 2)).toBeCloseTo(0.5);
 // or 
-    expect(divide(1, 2)).toEqual(0.5);
+    expect(divide(1, 2)).toEqual(0.6);
 
   })

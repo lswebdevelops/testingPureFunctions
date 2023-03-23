@@ -17,7 +17,7 @@ test('Should be null', () =>{
     expect(functions.isNull()).toBeNull();
     
 })
-// checking if it is a falsy value
+// checking if it is a falsy/ truthy values
 test('Should be falsy', () =>{
     expect(functions.checkValue(null)).toBeFalsy();
     expect(functions.checkValue(0)).toBeFalsy();
@@ -26,4 +26,14 @@ test('Should be falsy', () =>{
     expect(functions.checkValue(true)).toBeTruthy(); 
       
 })
+
+// to create a user (toEqual because is an array or object)
+test('User should be Brad Traversy object',()=>{
+    expect(functions.createUser()).toEqual({
+        firstName: "Brad", 
+        lastName: "Traversy"
+    })
+})
+
+
 

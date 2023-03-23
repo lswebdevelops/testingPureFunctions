@@ -1,7 +1,7 @@
 // Jest Crash Course - Unit Testing in JavaScript - Traversy Media
 
 const functions = require('./functions');
-const axios = require('axios')
+
 
 test('Adds 2 + 2  to equal 4', () =>{
     expect(functions.add(2,2)).toBe(4);
@@ -63,10 +63,9 @@ test('Admin should be in usernames', ()=>{
 
 
 // working with async data 
-test('User fetche name should be Leanne Graham', () =>{
-    expect.assertions(1);
-    return functions.fetchUser().then(data =>{
-        expect(data.name).toEqual("Leanne Graham");
-    });
-
+test('User fetche name should be Leanne Graham', async () =>{
+    // expect.assertions(1);
+    const data = await functions.fetchUser();
+    expect(data.name).toEqual("Leanne Graham");
+    
 });
